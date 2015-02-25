@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+echo "-----> Installing OpenSCAD Binaries"
+cd $1
+cd vendor/openscad/openscad-2014.03
+./install.sh
