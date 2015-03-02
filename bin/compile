@@ -2,6 +2,4 @@
 # bin/compile <build-dir> <cache-dir>
 
 echo "-----> Installing OpenSCAD Binaries"
-cd $1
-cd /vendor
-wget http://files.openscad.org/openscad-2014.03.x86-64.tar.gz
+cd /vendor && wget http://files.openscad.org/openscad-2014.03.x86-64.tar.gz
