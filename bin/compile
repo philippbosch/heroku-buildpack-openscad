@@ -3,5 +3,5 @@
 
 echo "-----> Installing OpenSCAD Binaries"
 cd $1
-cd vendor/openscad/openscad-2014.03
-./install.sh
+cd /vendor
+wget http://files.openscad.org/openscad-2014.03.x86-64.tar.gz
