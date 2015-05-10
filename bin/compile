@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+set -e
+
 echo "-----> Installing OpenSCAD Binaries"
 cd $1
-cd vendor/ && wget http://files.openscad.org/openscad-2014.03.x86-64.tar.gz
-cd $1
-cd vendor/ && tar -xvf openscad-2014.03.x86-64.tar.gz
+mkdir vendor
+cd vendor
+wget http://files.openscad.org/openscad-2014.03.x86-64.tar.gz
+tar -xvf openscad-2014.03.x86-64.tar.gz
